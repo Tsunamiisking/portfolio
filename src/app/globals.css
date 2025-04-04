@@ -1,8 +1,81 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap");
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #264653;
+  --foreground: #000000;
+  --textColor: "#ffff";
+  --button: #2a9d8f;
+  --cursor: #e9c46a;
+
+  /* FONT */
+}
+
+.backgroundButton {
+  background-color: var(--button);
+}
+.textColor {
+  color: var(--textColor);
+}
+.cursor {
+  color: var(--cursor);
+}
+/* FONT */
+/* @font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}  */
+
+.outfit-bold {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-bold {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+.manrope-regular {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
 }
 
 @theme inline {
@@ -12,12 +85,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);

@@ -31,7 +31,7 @@ import {
     return (
       <section
         ref={targetRef}
-        className="h-[1000vh] bg-neutral-50 text-neutral-950"
+        className="h-[1000vh] bg-white-50 text-black-950"
       >
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
           <motion.p
