@@ -1,13 +1,16 @@
 import React from 'react'
 import Header from './Header'
+import HeroCard from './HeroCard';
 
 const HeroSection = () => {
   const word = "< Hello World />";
   return (
-    <div className='min-h-screen w-full flex justify-center items-center'>
+    <div className='min-h-screen w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center'>
        <div className=''>
-       <h1 className='text-5xl outfit-bold'>{word}<span className=''>.</span></h1>
-       <h2 className=''>I'm Allen <span className='text-primary'>O.</span> Douglas</h2>
+       {/* Text Section */}
+       </div>
+       <div>
+        <HeroCard/>
        </div>
     </div>
   )
