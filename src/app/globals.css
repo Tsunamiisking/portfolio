@@ -17,6 +17,9 @@
 .textColor {
   color: var(--textColor);
 }
+.bg-cursor {
+  background-color: var(--cursor);
+}
 .cursor {
   color: var(--cursor);
 }
