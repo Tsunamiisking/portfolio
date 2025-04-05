@@ -1,5 +1,10 @@
-"use client"
-import React from 'react'
+"use client";
+import React from "react";
+import { FiLinkedin } from "react-icons/fi";
+import { FiInstagram } from "react-icons/fi";
+import { FiTwitter } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
+
 const NavMenu = [
   { name: "Hero", href: "#hero" },
   { name: "Work", href: "#work" },
@@ -7,19 +12,53 @@ const NavMenu = [
   { name: "Contact", href: "#contact" },
 ];
 
+const SocialIcons = [
+  {
+    name: "LinkedIn",
+    icon: <FiLinkedin />,
+    href: "https://www.linkedin.com/in/yourprofile",
+  },
+  {
+    name: "Instagram",
+    icon: <FiInstagram />,
+    href: "https://www.instagram.com/yourprofile",
+  },
+  {
+    name: "GitHub",
+    icon: <FiGithub />,
+    href: ""
+  },
+  {
+    name: "X",
+    icon: <FiTwitter />,
+    href: "https://twitter.com/yourprofile",
+  }
+];
 
 const Header = () => {
   return (
     <div className="flex md:grid md:grid-cols-2 justify-center items-center md:justify-between backgroundButton md:px-20 w-full py-5 rounded-xl manrope-bold sticky top-5 z-100">
-        <div className='flex justify-between md:justify-start gap-10 order-2 md:order-1 font'>
-            {NavMenu.map((item, index) => {
-                return <div key={index} className='flex items-center'><a href={item.href}>{item.name}</a></div>
-            })}
-        </div>
-        <div className='md:justify-end order-1 md:order-2 md:flex hidden'>
-            socials
-        </div>
+      <div className="flex justify-between md:justify-start gap-10 order-2 md:order-1 outfit-bold">
+        {NavMenu.map((item, index) => {
+          return (
+            <div key={index} className="flex items-center ">
+              <a href={item.href}>{item.name}</a>
+            </div>
+          );
+        })}
+      </div>
+      <div className="order-1 md:order-2 md:flex md:gap-10 md:justify-end hidden">
+        {SocialIcons.map((item, index) => {
+          return (
+            <div key={index} className="flex items-center">
+              <a href={item.href} target="_blank" rel="noopener noreferrer">
+                {item.icon}
+              </a>
+            </div>
+          );
+        })}
+      </div>
     </div>
-)
-}
-export default Header
+  );
+};
+export default Header;
