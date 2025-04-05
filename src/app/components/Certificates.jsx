@@ -9,7 +9,7 @@ const figma = "/assets/images/figma.png";
 
 export const DragCards = () => {
   return (
-    <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-primary">
+    <section className="relative grid min-h-screen w-full place-content-center overflow-hidden bg-primary z-0">
       <h2 className="relative z-0 text-6xl font-black text-cursor md:text-[100px]">
         PROJECTS<span className="">.</span>
       </h2>
@@ -22,7 +22,7 @@ const Cards = () => {
   const containerRef = useRef(null);
 
   return (
-    <div className="absolute inset-0 z-10" ref={containerRef}>
+    <div className="absolute inset-0 z-1000" ref={containerRef}>
       <Card
         containerRef={containerRef}
         src={figma}
@@ -30,7 +30,7 @@ const Cards = () => {
         rotate="6deg"
         top="20%"
         left="25%"
-        className="w-36 md:w-56 object-contain"  // Added object-contain
+        className="w-36 md:w-56 object-contain z-0"  // Added object-contain
       />
       <Card
         containerRef={containerRef}

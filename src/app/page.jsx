@@ -10,9 +10,9 @@ import { DragCards } from "./components/Certificates";
 export default function Home() {
   return (
     <main className="px-5 lg:px:10">
-      <Header />
+           <Header />
       <HeroSection />
-      <DragCards />
+      {/* <DragCards /> */}
     </main>
   );
 }
