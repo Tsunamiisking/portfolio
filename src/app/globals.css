@@ -4,9 +4,9 @@
 :root {
   --background: #264653;
   --foreground: #000000;
-  --textColor: "#ffff";
   --button: #2a9d8f;
-  --cursor: #e9c46a;
+  --textColor: #ffffff;
+  --cursor: #ffffff;
 
   /* FONT */
 }

@@ -74,20 +74,6 @@ const HeroImage = "/assets/images/heroimage.jpg";
         }}
         className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
       >
-        {/* <FiMousePointer
-          style={{
-            transform: "translateZ(75px)",
-          }}
-          className="mx-auto text-4xl"
-        /> */}
-        {/* <p
-          style={{
-            transform: "translateZ(50px)",
-          }}
-          className="text-center text-2xl font-bold"
-        >
-          HOVER ME
-        </p> */}
       </div>
     </motion.div>
   );
