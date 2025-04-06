@@ -15,22 +15,22 @@ const NavMenu = [
 const SocialIcons = [
   {
     name: "LinkedIn",
-    icon: <FiLinkedin />,
+    icon: <FiLinkedin color="white" />,
     href: "https://www.linkedin.com/in/yourprofile",
   },
   {
     name: "Instagram",
-    icon: <FiInstagram />,
+    icon: <FiInstagram color="white" />,
     href: "https://www.instagram.com/yourprofile",
   },
   {
     name: "GitHub",
-    icon: <FiGithub />,
+    icon: <FiGithub color="white" />,
     href: ""
   },
   {
     name: "X",
-    icon: <FiTwitter />,
+    icon: <FiTwitter color="white" />,
     href: "https://twitter.com/yourprofile",
   }
 ];
