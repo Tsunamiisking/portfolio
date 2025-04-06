@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap");
 
 :root {
-  --background: #264653;
+  --background: #0d2833;
   --foreground: #000000;
   --button: #2a9d8f;
   --textColor: #ffffff;
@@ -13,6 +13,9 @@
 
 .backgroundButton {
   background-color: var(--button);
+}
+.blueText{
+  color: var(--button);
 }
 .textColor {
   color: var(--textColor);
