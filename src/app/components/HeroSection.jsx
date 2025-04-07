@@ -15,7 +15,7 @@ const HeroSection = () => {
           Hello World{" "}
         </h1>
         <motion.img
-            initial={{rotate: [0,0,0, 0]}}
+            initial={{rotate: [0, 0, 0, 0]}}
             // animate={{rotate: [0, -45, 35, 0]}}
             whileHover={{rotate: [0, -45, 35, 0]}}
             exit={{rotate: [0, 0, 0, 0]}}
