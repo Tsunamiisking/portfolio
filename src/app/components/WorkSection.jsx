@@ -1,9 +1,8 @@
-import * as React from 'react';
+import * as React from "react";
 import { motion } from "framer-motion";
-import { PieChart } from '@mui/x-charts/PieChart';
+import { PieChart } from "@mui/x-charts/PieChart";
 
-
-const VALUEFORMATER = (item) => `${item.value}%`
+const VALUEFORMATER = (item) => `${item.value}%`;
 
 const PetPal = "../assets/images/petpal.png";
 const WorkSection = () => {
@@ -22,45 +21,50 @@ const WorkSection = () => {
 };
 
 const WorkCard = () => {
-   const technology = [
+  const technology = [
     {
       label: "Python",
-      value: 72.72,
+      value: 500,
     },
     {
-      label: "HTML",
-      value: 16.38,
+      label: "HTML/CSS",
+      value: 200,
     },
     {
-      label: "CSS",
-      value: 3.83,
+      label: "Sqlite3",
+      value: 200,
     },
     {
-      label: "Chrome OS",
-      value: 2.42,
-    },
-    {
-      label: "Other",
-      value: 4.65,
+      label: "Others",
+      value: 100,
     },
   ];
   return (
-    <div className="grid grid-col-1 w-full p-5 yellow-card">
-      <div className="w-full md:w-1/2">
+    <div className="grid grid-cols-1 w-full p-5 yellow-card">
+      <div className="w-full md:px-30 mb-5">
         <img src={PetPal} alt="" />
       </div>
       <div className="">
-      {/* <PieChart
-      series={[
-        {
-          data: technology,
-          highlightScope: { fade: 'global', highlight: 'item' },
-          faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
-          VALUEFORMATER,
-        },
-      ]}
-      height={100}
-    /> */}
+        <div>
+          <h1>PetPal</h1>
+        </div>
+        <div>
+          <PieChart
+            colors={["#2a9d8f", "#0d2833", "#e76f51", "#e9c46a"]}
+            series={[
+              {
+                // paddingAngle: 5,
+                innerRadius: 30,
+                outerRadius: 20,
+                data: technology,
+              },
+            ]}
+            margin={{ right: 5 }}
+            width={80}
+            height={80}
+            legend={{ hidden: true }}
+          />
+        </div>
       </div>
     </div>
   );
