@@ -1,5 +1,9 @@
-import React from "react";
+import * as React from 'react';
 import { motion } from "framer-motion";
+import { PieChart } from '@mui/x-charts/PieChart';
+
+
+const VALUEFORMATER = (item) => `${item.value}%`
 
 const PetPal = "../assets/images/petpal.png";
 const WorkSection = () => {
@@ -18,13 +22,45 @@ const WorkSection = () => {
 };
 
 const WorkCard = () => {
+   const technology = [
+    {
+      label: "Python",
+      value: 72.72,
+    },
+    {
+      label: "HTML",
+      value: 16.38,
+    },
+    {
+      label: "CSS",
+      value: 3.83,
+    },
+    {
+      label: "Chrome OS",
+      value: 2.42,
+    },
+    {
+      label: "Other",
+      value: 4.65,
+    },
+  ];
   return (
     <div className="grid grid-col-1 w-full p-5 yellow-card">
       <div className="w-full md:w-1/2">
         <img src={PetPal} alt="" />
       </div>
       <div className="">
-        <h1></h1>
+      {/* <PieChart
+      series={[
+        {
+          data: technology,
+          highlightScope: { fade: 'global', highlight: 'item' },
+          faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
+          VALUEFORMATER,
+        },
+      ]}
+      height={100}
+    /> */}
       </div>
     </div>
   );
