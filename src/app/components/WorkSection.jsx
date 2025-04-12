@@ -1,10 +1,12 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { PieChart } from "@mui/x-charts/PieChart";
-
+import NorthEastIcon from '@mui/icons-material/NorthEast';
 const VALUEFORMATER = (item) => `${item.value}%`;
 
 const PetPal = "../assets/images/petpal.png";
+
 const WorkSection = () => {
   return (
     <motion.div
@@ -40,25 +42,27 @@ const WorkCard = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 w-full p-5 yellow-card">
+    <div className="flex justify-center flex-col md:flex-row  w-full p-5 yellow-card">
       {/* Image DIV */}
-      <div className="w-full mb-5">
+      <div className="w-full mb-5 md:w-90 md:mb-0 lg:w-full flex-1/3">
         <img src={PetPal} alt="" />
       </div>
 
-      <div className="flex ">
-        <div>
-          <h1 className="text-2xl md:text-left text-left text-gray-300 mb-5 outfit-bold">
-            PetPal
+      <div className="flex md:ml-5 flex-2/3 align-middle">
+        <div className="">
+          <a href="">
+          <h1 className="text-xl md:text-left text-left text-gray-300 mb-5 outfit-bold">
+            PetPal <OpenInNewIcon sx={{ fontSize: 21 }} />
           </h1>
-          <p className="text-xl text-left text-gray-300">
+          </a>
+          <p className="text-md text-left text-gray-300">
             A Django-based web application designed to simplify pet adoption.
             Built with Django, SQLite, HTML, and CSS, the platform allows users
             to create an account, browse a variety of pets, and adopt their
             perfect companion with ease.
           </p>
         </div>
-        <div>
+        <div className="flex flex-col justify-center ml-2"> 
           <PieChart
             colors={["#2a9d8f", "#0d2833", "#e76f51", "#e9c46a"]}
             series={[
