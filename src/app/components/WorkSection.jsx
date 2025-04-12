@@ -13,7 +13,7 @@ const WorkSection = () => {
       // transition={{ duration: 5}}
       className="mt-20 h-screen w-full rounded-2xl"
     >
-      <div className="flex justify-center ">
+      <div className="flex w-full ">
         <WorkCard />
       </div>
     </motion.div>
@@ -29,7 +29,7 @@ const WorkCard = () => {
     {
       label: "HTML/CSS",
       value: 200,
-    }, 
+    },
     {
       label: "Sqlite3",
       value: 200,
@@ -40,20 +40,22 @@ const WorkCard = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 w-full p-5 yellow-card md:w-2/3">
+    <div className="grid grid-cols-1 lg:grid-cols-2 w-full p-5 yellow-card">
+      {/* Image DIV */}
       <div className="w-full mb-5">
         <img src={PetPal} alt="" />
       </div>
-      <h1 className="text-2xl md:text-left text-left text-gray-300 mb-5 outfit-bold">
-        PetPal
-      </h1>
-      <div className="flex">
+
+      <div className="flex ">
         <div>
+          <h1 className="text-2xl md:text-left text-left text-gray-300 mb-5 outfit-bold">
+            PetPal
+          </h1>
           <p className="text-xl text-left text-gray-300">
-            A Django-based web application designed to simplify pet
-            adoption. Built with Django, SQLite, HTML, and CSS, the platform
-            allows users to create an account, browse a variety of pets, and
-            adopt their perfect companion with ease.
+            A Django-based web application designed to simplify pet adoption.
+            Built with Django, SQLite, HTML, and CSS, the platform allows users
+            to create an account, browse a variety of pets, and adopt their
+            perfect companion with ease.
           </p>
         </div>
         <div>
