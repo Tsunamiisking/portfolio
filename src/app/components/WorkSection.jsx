@@ -12,6 +12,8 @@ import NorthEastIcon from "@mui/icons-material/NorthEast";
 const VALUEFORMATER = (item) => `${item.value}%`;
 
 const PetPal = "../assets/images/petpal.png";
+const MessagingImg = "../assets/images/messaging.png";
+const LogbookImg ="../assets/images/logbookfiller.png"
 
 const WorkSection = () => {
   return (
@@ -21,7 +23,7 @@ const WorkSection = () => {
       // transition={{ duration: 5}}
       className="mt-20 h-screen w-full rounded-2xl"
     >
-      <div className="flex w-full ">
+      <div className="flex flex-col w-full ">
         <WorkCard
           src={PetPal}
           title="PetPal"
@@ -31,6 +33,24 @@ const WorkSection = () => {
             perfect companion with ease."
           stackdata={petpalstack}
         />
+        <WorkCard
+          src={MessagingImg}
+          title="Messaging"
+          description="A Django-based web application designed to simplify pet adoption.
+            Built with Django, SQLite, HTML, and CSS, the platform allows users
+            to create an account, browse a variety of pets, and adopt their
+            perfect companion with ease."
+          stackdata={messagingstack}
+        />
+        <WorkCard
+          src={LogbookImg}
+          title="Logbook filler"
+          description="A Django-based web application designed to simplify pet adoption.
+            Built with Django, SQLite, HTML, and CSS, the platform allows users
+            to create an account, browse a variety of pets, and adopt their
+            perfect companion with ease."
+          stackdata={logbookstack}
+        />
       </div>
     </motion.div>
   );
@@ -38,7 +58,7 @@ const WorkSection = () => {
 
 const WorkCard = ({ stackdata, src, title, description }) => {
   return (
-    <div className="flex justify-center flex-col md:flex-row  w-full p-5 no-border-card">
+    <div className="flex justify-center flex-col md:flex-row my-5 w-full p-5 no-border-card">
       {/* Image DIV */}
       <div className="w-full mb-5 md:w-90 md:mb-0 lg:w-full flex-1/3">
         <img src={src} alt="" />
@@ -52,9 +72,7 @@ const WorkCard = ({ stackdata, src, title, description }) => {
               {title} <OpenInNewIcon sx={{ fontSize: 21 }} />
             </h1>
           </a>
-          <p className="text-md text-left text-gray-300">
-            {description}
-          </p>
+          <p className="text-md text-left text-gray-300">{description}</p>
         </div>
         <div className="flex flex-col justify-center ml-2">
           <PieChart

@@ -19,26 +19,22 @@ const petpalstack = [
 
   const logbookstack = [
     {
-      label: "Javasctipt",
+      label: "React/NextJS",
       value: 400,
     },
     {
-      label: "React/NextJS",
-      value: 200,
-    },
-    {
       label: "LLM integration",
-      value: 300,
+      value: 400,
     },
     {
       label: "Others",
-      value: 100,
+      value: 200,
     },
   ];
 
   const messagingstack = [
     {
-      label: "Javasctipt",
+      label: "Vanilla js",
       value: 400,
     },
     {
