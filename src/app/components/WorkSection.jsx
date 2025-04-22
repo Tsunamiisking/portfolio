@@ -18,9 +18,10 @@ const LogbookImg ="../assets/images/logbookfiller.png"
 const WorkSection = () => {
   return (
     <motion.div
-      // whileInView={{ opacity: 1 }}
-      // initial={{ opacity: 0 }}
-      // transition={{ duration: 5}}
+    initial={{ y: 100, opacity: 0 }}
+    whileInView={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.6 }}
+    viewport={{ once: true }}
       className="mt-20 h-screen w-full rounded-2xl"
     >
       <div className="flex flex-col w-full ">

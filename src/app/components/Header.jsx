@@ -4,6 +4,7 @@ import { FiLinkedin } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
+import {motion} from "framer-motion";
 
 const NavMenu = [
   { name: "Hero", href: "#hero" },
