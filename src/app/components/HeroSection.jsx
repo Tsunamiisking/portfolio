@@ -5,9 +5,8 @@ import { motion } from "framer-motion";
 
 const wavingHand = "/assets/images/wavinghang.svg";
 const HeroSection = () => {
-  const word = "< Hello World />";
   return (
-    <div className="min-h-screen w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-20 md:mt-0 px-5 md:pl-20 gap-10">
+    <div className="min-h-screen w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-20 md:mt-0 px-5 gap-10">
       <div className="">
         {/* Text Section */}
         <div className="md:justify-start text-center flex justify-center items-center md:items-start">

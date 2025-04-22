@@ -9,7 +9,7 @@ import {
 
 const HeroCard = () => {
   return (
-    <div className="grid place-content-center bg-gradient-to-br px-4 py-12 text-slate-900">
+    <div className="grid place-content-center md:justify-end md:e bg-gradient-to-br py-12 text-slate-900">
       <TiltCard />
     </div>
   );
