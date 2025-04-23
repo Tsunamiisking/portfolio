@@ -7,10 +7,10 @@ const wavingHand = "/assets/images/wavinghang.svg";
 const HeroSection = () => {
   return (
     <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
+      // initial={{ y: 100, opacity: 0 }}
+      // whileInView={{ y: 0, opacity: 1 }}
+      // transition={{ duration: 0.6 }}
+      // viewport={{ once: true }}
       className="min-h-screen w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-20 md:mt-0 gap-10"
     >
       {/* Text section */}
@@ -44,9 +44,9 @@ const HeroSection = () => {
       </div>
 
       {/* Image section */}
-      <motion.div className="">
+      <div className="">
         <HeroCard />
-      </motion.div>
+      </div>
     </motion.div>
   );
 };
