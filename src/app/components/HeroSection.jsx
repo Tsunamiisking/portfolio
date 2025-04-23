@@ -11,7 +11,7 @@ const HeroSection = () => {
       // whileInView={{ y: 0, opacity: 1 }}
       // transition={{ duration: 0.6 }}
       // viewport={{ once: true }}
-      className="min-h-screen w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-20 md:mt-0 gap-10"
+      className="min-h-screen w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-30 md:mt-0 gap-10"
     >
       {/* Text section */}
       <div className="">
