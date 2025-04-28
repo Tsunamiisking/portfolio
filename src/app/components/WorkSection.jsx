@@ -60,11 +60,11 @@ const WorkSection = () => {
 const WorkCard = ({ stackdata, src, title, description }) => {
   return (
     <motion.div
-    initial={{ y: 100, opacity: 0 }}
-    whileInView={{ y: 0, opacity: 1 }}
-    transition={{ duration: 0.6 }}
-    viewport={{ once: true }}
-     className="flex justify-center flex-col md:flex-row my-5 w-full p-5 no-border-card">
+    // initial={{ y: 100, opacity: 0 }}
+    // whileInView={{ y: 0, opacity: 1 }}
+    // transition={{ duration: 0.6 }}
+    // viewport={{ once: true }}
+     className="flex justify-center flex-col md:flex-row my-5 w-full p-5 no-border-card ">
       {/* Image DIV */}
       <div className="w-full mb-5 md:w-90 md:mb-0 lg:w-full flex-1/3">
         <img src={src} alt="" />

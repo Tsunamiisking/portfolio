@@ -5,6 +5,7 @@ import Image from "next/image";
 import Header from "@/app/components/Header";
 import HeroSection from "@/app/components/HeroSection";
 import WorkSection from "@/app/components/WorkSection";
+import AboutSection from "@/app/components/AboutSection";
 import { DragCards } from "./components/Certificates";
 import HeroCard from "./components/HeroCard";
 
@@ -25,14 +26,17 @@ export default function Home() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
   return (
-    <main className="px-5 md:px-20">
+    <main
+      className="px-5 md:px-20 overflow-visible"
+    >
       {/* <motion.div
-        className="fixed top-0 left-0 w-6 h-6 bg-cursor rounded-full pointer-events-none z-1000"
+        className="fixed top-0 left-0 w-6 h-6 bg-blue-900 rounded-full pointer-events-none z-1000"
         style={{ x: springX, y: springY }}
       /> */}
       <Header />
       <HeroSection />
       <WorkSection />
+      <AboutSection />
       {/* <DragCards /> */}
     </main>
   );
