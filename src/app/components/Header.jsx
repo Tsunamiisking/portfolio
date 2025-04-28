@@ -38,8 +38,8 @@ const SocialIcons = [
 
 const Header = () => {
   return (
-      <div className="flex md:grid md:grid-cols-2 justify-center items-center md:justify-between md:px-20 w-full py-5 rounded-xl sticky z-100 top-5 manrope-bold card">
-        <div className="flex justify-between md:justify-start gap-10 order-2 md:order-1 outfit-bold ">
+      <div className="flex lg:grid lg:grid-cols-2 justify-center items-center lg:justify-between md:px-20 w-full py-5 rounded-xl sticky z-100 top-5 manrope-bold card">
+        <div className="flex justify-between lg:justify-start gap-10 order-2 lg:order-1 outfit-bold ">
           {NavMenu.map((item, index) => {
             return (
               <div key={index} className="flex items-center ">
@@ -52,7 +52,7 @@ const Header = () => {
         </div>
 
 
-        <div className="order-1 md:order-2 md:flex md:gap-10 md:justify-end hidden">
+        <div className="order-1 lg:order-2 lg:flex lg:gap-10 lg:justify-end hidden">
           {SocialIcons.map((item, index) => {
             return (
               <div key={index} className="flex items-center">
