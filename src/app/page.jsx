@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <main
       ref={constraintsRef}
-      className="px-5 md:px-20 relative w-full min-h-screen overflow-hidden"
+      className="px-5 md:px-20 relative w-full"
     >
       {/* <motion.div
         className="fixed top-0 left-0 w-6 h-6 bg-blue-900 rounded-full pointer-events-none z-1000"
